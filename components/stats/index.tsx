@@ -9,7 +9,7 @@ interface EstatisticaProps {
 
 
 
-export default function Estatistica(props) {
+export default function Estatistica(props: EstatisticaProps) {
     return (
         <div className={styles.estatistica}>
             <div className={styles.valor} style={{

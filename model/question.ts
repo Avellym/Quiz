@@ -8,11 +8,12 @@ export default class QuestionModel {
     #correto: boolean
     #respondida: boolean
 
-   constructor(id: number, enunciado: string, respostas: RespostaModel[], correto = false) {
+   constructor(id: number, enunciado: string, respostas: RespostaModel[], correto = false, respondida = false) {
     this.#id = id
     this.#enunciado = enunciado
     this.#respostas = respostas
     this.#correto = correto
+    this.#respondida = respondida
    }
 
    get id(){
